@@ -4,15 +4,7 @@ import { Icon } from "@iconify/vue";
 import { v4 as uuid } from "uuid";
 import TaskCard from "./components/TaskCard.vue";
 
-const tasks = ref([
-  {
-    id: uuid(),
-    editing: false,
-    completed: false,
-    task: "test data",
-    created: Date.now(),
-  },
-]);
+const tasks = ref([]);
 const currentInput = ref("");
 
 function handleDelete(id) {
